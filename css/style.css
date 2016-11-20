@@ -6,9 +6,220 @@
  * Made By MaterializeCSS.com
  */
 
-.icon-block {
-  padding: 0 15px;
+html {
+	direction: rtl;
 }
+
+/* Form */
+
+.input-field .prefix {
+	padding-top: 0.8rem;
+}
+
+
+.icon-block {
+	padding: 0 15px;
+}
+
+
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+.carousel-slider {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.butterbar {
+	display: none;
+	height: 3px;
+	position: relative;
+	top: 0;
+	z-index: 100000;
+	width: 100%;
+	margin-bottom: -3px;
+}
+
+.butterbar.active {
+	-webkit-animation: changebar 2.25s infinite .75s;
+	-moz-animation: changebar 2.25s infinite .75s;
+	animation: changebar 2.25s infinite .75s;
+	display: block;
+}
+
+.butterbar .bar {
+	background-color: #23b7e5;
+	height: 0;
+	text-indent: -9999px;
+	position: absolute;
+	width: 100%;
+}
+
+.butterbar.active .bar {
+	-webkit-animation: changebar 2.25s infinite;
+	-moz-animation: changebar 2.25s infinite;
+	animation: changebar 2.25s infinite
+}
+
+.butterbar .bar:before {
+	background-color: inherit;
+	content: "";
+	height: 3px;
+	left: 50%;
+	position: absolute;
+	right: 50%;
+}
+
+.butterbar.active .bar:before {
+	-webkit-animation: movingbar .75s infinite;
+	-moz-animation: movingbar .75s infinite;
+	animation: movingbar .75s infinite
+}
+
+@-webkit-keyframes movingbar {
+	0% {
+		right: 50%;
+		left: 50%
+	}
+
+	99.9% {
+		right: 0;
+		left: 0
+	}
+
+	100% {
+		right: 50%;
+		left: 50%
+	}
+}
+
+@-moz-keyframes movingbar {
+	0% {
+		right: 50%;
+		left: 50%
+	}
+
+	99.9% {
+		right: 0;
+		left: 0
+	}
+
+	100% {
+		right: 50%;
+		left: 50%
+	}
+}
+
+@keyframes movingbar {
+	0% {
+		right: 50%;
+		left: 50%
+	}
+
+	99.9% {
+		right: 0;
+		left: 0
+	}
+
+	100% {
+		right: 50%;
+		left: 50%
+	}
+}
+
+@-webkit-keyframes changebar {
+	0% {
+		background-color: #23b7e5
+	}
+
+	33.3% {
+		background-color: #23b7e5
+	}
+
+	33.33% {
+		background-color: #fad733
+	}
+
+	66.6% {
+		background-color: #fad733
+	}
+
+	66.66% {
+		background-color: #7266ba
+	}
+
+	99.9% {
+		background-color: #7266ba
+	}
+}
+
+@-moz-keyframes changebar {
+	0% {
+		background-color: #23b7e5
+	}
+
+	33.3% {
+		background-color: #23b7e5
+	}
+
+	33.33% {
+		background-color: #fad733
+	}
+
+	66.6% {
+		background-color: #fad733
+	}
+
+	66.66% {
+		background-color: #7266ba
+	}
+
+	99.9% {
+		background-color: #7266ba
+	}
+}
+
+@keyframes changebar {
+	0% {
+		background-color: #23b7e5
+	}
+
+	33.3% {
+		background-color: #23b7e5
+	}
+
+	33.33% {
+		background-color: #fad733
+	}
+
+	66.6% {
+		background-color: #fad733
+	}
+
+	66.66% {
+		background-color: #7266ba
+	}
+
+	99.9% {
+		background-color: #7266ba
+	}
 }

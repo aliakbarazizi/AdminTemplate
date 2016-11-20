@@ -6,50 +6,101 @@
  * Made By MaterializeCSS.com
  */
 
-html {
+html
+{
 	direction: rtl;
+}
+
+/* General */
+
+a
+{
+	color: #00897b;
+	transition: color .3s ease;
+}
+
+a:hover
+{
+	color: #26a69a;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating)
+{
+	color: #78909c;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover
+{
+	color: #b0bec5;
 }
 
 /* Form */
 
-.input-field .prefix {
+.input-field .prefix
+{
 	padding-top: 0.8rem;
 }
 
 
-.icon-block {
-	padding: 0 15px;
+/* Content Section */
+
+
+/* Right Side */
+
+
+.rightside .carousel-slider
+{
+
+}
+
+/* Main Content */
+.main-content > .row
+{
+	margin-bottom: 0;
+}
+
+.main-content .card
+{
+	position: relative;
+	margin: 0.75rem 0 0.75rem 0;
+}
+
+.main-content .pagination
+{
+	margin-top: 20px;
+}
+/* Component */
+
+/* Pagination */
+
+.pagination li a {
+	color: #444;
+}
+
+.pagination li.active a {
+	color: #fff;
+}
+
+.pagination li:hover {
+	background-color: #b2dfdb;
+}
+
+.pagination li.active {
+	background-color: #00695c;
+}
+
+.pagination li.disabled:hover {
+	background-color: inherit;
+}
+
+.pagination li.disabled a {
+	color: #999;
 }
 
 
-.icon-block .material-icons {
-	font-size: inherit;
-}
-
-.carousel-slider {
-	margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.butterbar {
+/* Butter Bar */
+.butterbar
+{
 	display: none;
 	height: 3px;
 	position: relative;
@@ -59,14 +110,16 @@ html {
 	margin-bottom: -3px;
 }
 
-.butterbar.active {
+.butterbar.active
+{
 	-webkit-animation: changebar 2.25s infinite .75s;
 	-moz-animation: changebar 2.25s infinite .75s;
 	animation: changebar 2.25s infinite .75s;
 	display: block;
 }
 
-.butterbar .bar {
+.butterbar .bar
+{
 	background-color: #23b7e5;
 	height: 0;
 	text-indent: -9999px;
@@ -74,13 +127,15 @@ html {
 	width: 100%;
 }
 
-.butterbar.active .bar {
+.butterbar.active .bar
+{
 	-webkit-animation: changebar 2.25s infinite;
 	-moz-animation: changebar 2.25s infinite;
 	animation: changebar 2.25s infinite
 }
 
-.butterbar .bar:before {
+.butterbar .bar:before
+{
 	background-color: inherit;
 	content: "";
 	height: 3px;
@@ -89,137 +144,171 @@ html {
 	right: 50%;
 }
 
-.butterbar.active .bar:before {
+.butterbar.active .bar:before
+{
 	-webkit-animation: movingbar .75s infinite;
 	-moz-animation: movingbar .75s infinite;
 	animation: movingbar .75s infinite
 }
 
-@-webkit-keyframes movingbar {
-	0% {
+@-webkit-keyframes movingbar
+{
+	0%
+	{
 		right: 50%;
 		left: 50%
 	}
 
-	99.9% {
+	99.9%
+	{
 		right: 0;
 		left: 0
 	}
 
-	100% {
+	100%
+	{
 		right: 50%;
 		left: 50%
 	}
 }
 
-@-moz-keyframes movingbar {
-	0% {
+@-moz-keyframes movingbar
+{
+	0%
+	{
 		right: 50%;
 		left: 50%
 	}
 
-	99.9% {
+	99.9%
+	{
 		right: 0;
 		left: 0
 	}
 
-	100% {
+	100%
+	{
 		right: 50%;
 		left: 50%
 	}
 }
 
-@keyframes movingbar {
-	0% {
+@keyframes movingbar
+{
+	0%
+	{
 		right: 50%;
 		left: 50%
 	}
 
-	99.9% {
+	99.9%
+	{
 		right: 0;
 		left: 0
 	}
 
-	100% {
+	100%
+	{
 		right: 50%;
 		left: 50%
 	}
 }
 
-@-webkit-keyframes changebar {
-	0% {
+@-webkit-keyframes changebar
+{
+	0%
+	{
 		background-color: #23b7e5
 	}
 
-	33.3% {
+	33.3%
+	{
 		background-color: #23b7e5
 	}
 
-	33.33% {
+	33.33%
+	{
 		background-color: #fad733
 	}
 
-	66.6% {
+	66.6%
+	{
 		background-color: #fad733
 	}
 
-	66.66% {
+	66.66%
+	{
 		background-color: #7266ba
 	}
 
-	99.9% {
-		background-color: #7266ba
-	}
-}
-
-@-moz-keyframes changebar {
-	0% {
-		background-color: #23b7e5
-	}
-
-	33.3% {
-		background-color: #23b7e5
-	}
-
-	33.33% {
-		background-color: #fad733
-	}
-
-	66.6% {
-		background-color: #fad733
-	}
-
-	66.66% {
-		background-color: #7266ba
-	}
-
-	99.9% {
+	99.9%
+	{
 		background-color: #7266ba
 	}
 }
 
-@keyframes changebar {
-	0% {
+@-moz-keyframes changebar
+{
+	0%
+	{
 		background-color: #23b7e5
 	}
 
-	33.3% {
+	33.3%
+	{
 		background-color: #23b7e5
 	}
 
-	33.33% {
+	33.33%
+	{
 		background-color: #fad733
 	}
 
-	66.6% {
+	66.6%
+	{
 		background-color: #fad733
 	}
 
-	66.66% {
+	66.66%
+	{
 		background-color: #7266ba
 	}
 
-	99.9% {
+	99.9%
+	{
+		background-color: #7266ba
+	}
+}
+
+@keyframes changebar
+{
+	0%
+	{
+		background-color: #23b7e5
+	}
+
+	33.3%
+	{
+		background-color: #23b7e5
+	}
+
+	33.33%
+	{
+		background-color: #fad733
+	}
+
+	66.6%
+	{
+		background-color: #fad733
+	}
+
+	66.66%
+	{
+		background-color: #7266ba
+	}
+
+	99.9%
+	{
 		background-color: #7266ba
 	}
 }

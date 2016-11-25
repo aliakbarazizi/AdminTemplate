@@ -34,6 +34,42 @@ a:hover
 	color: #b0bec5;
 }
 
+
+
+@media (min-width: 768px)
+{
+	.container
+	{
+		width: 750px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
+	.container
+	{
+		width: 970px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+	.container
+	{
+		width: 1170px;
+	}
+}
+
+@media (min-width: 1800px)
+{
+	.container
+	{
+		width: 1280px;
+	}
+}
+
 /* Form */
 
 .input-field .prefix
@@ -41,12 +77,50 @@ a:hover
 	padding-top: 0.8rem;
 }
 
+/* Navbar */
+
+.brand-logo
+{
+	height: 100%;
+}
+
+.brand-logo img
+{
+	height: 100%;
+	width: auto;
+	float: right;
+}
+
+.brand-logo h1
+{
+	padding-right: 80px;
+	font-size: 1.5rem;
+	margin: 0;
+	line-height: 56px;
+}
+
+.nav-wrapper ul.menu
+{
+	margin-right: 200px;
+}
+
+@media only screen and (min-width: 1200px)
+{
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i, nav .brand-logo h1
+	{
+		height: 80px;
+		line-height: 80px;
+	}
+
+	nav ul a
+	{
+		font-size: 1.2rem;
+	}
+}
 
 /* Content Section */
 
-
 /* Right Side */
-
 
 .rightside .carousel-slider
 {
@@ -69,34 +143,40 @@ a:hover
 {
 	margin-top: 20px;
 }
+
 /* Component */
 
 /* Pagination */
 
-.pagination li a {
+.pagination li a
+{
 	color: #444;
 }
 
-.pagination li.active a {
+.pagination li.active a
+{
 	color: #fff;
 }
 
-.pagination li:hover {
+.pagination li:hover
+{
 	background-color: #b2dfdb;
 }
 
-.pagination li.active {
+.pagination li.active
+{
 	background-color: #00695c;
 }
 
-.pagination li.disabled:hover {
+.pagination li.disabled:hover
+{
 	background-color: inherit;
 }
 
-.pagination li.disabled a {
+.pagination li.disabled a
+{
 	color: #999;
 }
-
 
 /* Butter Bar */
 .butterbar
